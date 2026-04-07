@@ -450,7 +450,7 @@ export default function App() {
             preload="auto"
             className="w-full h-full object-cover"
           >
-            <source src="/hero-video.mp4" type="video/mp4" />
+            <source src={`${import.meta.env.BASE_URL}hero-video.mp4`} type="video/mp4" />
           </video>
 
           {/* Overlays for text readability */}
@@ -712,7 +712,7 @@ export default function App() {
       {/* Quote Section — Pot Lid Lifted Video (compressed 1.5MB) */}
       <div className="relative h-[55vh] md:h-[65vh] overflow-hidden">
         <LazyVideo
-          src="/quote-video.mp4"
+          src={`${import.meta.env.BASE_URL}quote-video.mp4`}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-green-deep/70" />
